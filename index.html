@@ -25,127 +25,216 @@
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- Leave those next 4 lines if you care about users using IE8 -->
   <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-
-
+  <!-- Bootstrap CSS -->
+  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
 
   <style type="text/css">
     .inlineIt {
-      width: 10vw;
-      width: 20vw;
+      /*max-height: 10vh;*/
+      display: inline-block;
+    }
+
+    #template {
+      max-height: 300px;
+      max-width: 100%;
+      display: contents;
+      overflow: auto;
+    }
+    /*
+    img {
+
+      width:100%;
+      height:100%;
+    }
+    */
+    img {
+      max-width: 100%;
     }
   </style>
-
-
 </head>
+<!-- ######################################################################### -->
 <body>
+<div class="container">
   <h4>Final steps:</h4>
 
-<ol>
-  <li>
-    <span>Create transparent background versions of the images below. (<i>Maintain aspect ratios</i>)</span>
-    <ul>
-      <li>
-        <div class="inlineIt">
-          <a href="https://lifestylesja.com/media/iw_logo_lightbg.png">
-            <img src="https://lifestylesja.com/media/iw_logo_lightbg.png" height="30px" />
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="inlineIt">
-          <a href="https://lifestylesja.com/media/iw_white_bulb.png">
-            <img src="https://lifestylesja.com/media/iw_white_bulb.png" height="30px" />
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
+  <ol>
+    <li>
+      <span>Create transparent background versions of the images below. (<i>Maintain aspect ratios</i>)</span>
+      <ul>
+        <li>
+          <div class="inlineIt">
+            <a href="https://lifestylesja.com/media/iw_logo_lightbg.png">
+              <img src="https://lifestylesja.com/media/iw_logo_lightbg.png" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="inlineIt">
+            <a href="https://lifestylesja.com/media/iw_white_bulb.png">
+              <img src="https://lifestylesja.com/media/iw_white_bulb.png" />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </li>
 
-  <li>
-    <span>Create your <a href="https://stripe.com">Stripe.com</a> account</span>
-    <ul>
-      <li>Find the [Start Now] button and follow steps to register</li>
-      <li>Keep the account in test mode... for now</li>
-    </ul>
-  </li>
-
-
-  <li>
-    <span>Invite Developer</span>
-    <ul>
-      <li>
-        <span>I'll need minimal access to your Stripe account to complete setup.</span>
-
-        <ul>
-          <li><p><code>Developer</code> role should be enough, but to make sure I'm not impeded, include <code>Administrator</code> and <code>Identity View Only</code> roles.</p>
-            <div class="inlineIt">
-              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                Popover on left
-              </button>
-
-              <img src="img/add_user_show roles.png" height="150px" /></div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-
-  <li>
-    <span>Add products</span>
-    <ul>
-      <li>From the <a href="https://dashboard.stripe.com/test/products/prod_MEc79BDcA4OsjU">Stripe.com dashboard</a> click on <a href="https://dashboard.stripe.com/test/products">[Products]</a></li>
-      <li><p>Fill in the fields shown  in the image</p>
-        <div class="inlineIt"><img src="img/create_product-1.png" height="150px" /></div>
-      </li>
-      <li><p><cite>Note the <code>Metadata</code> field under <cite>Additional Options</cite>.</dt>
-        <dd>The <code>manufacturer</code> (3M, Avery) is required for sorting the products during layout</cite></p>
-
-        See: <div class="inlineIt"><img src="img/create_product-2.png" height="150px" /></div>
-      </li>
-      <li>New and active products automatically appear on the site</li>
-    </ul>
-  </li>
-</ol>
+    <li>
+      <span>Create your <a href="https://stripe.com">Stripe.com</a> account</span>
+      <ul>
+        <li>Find the [Start Now] button and follow steps to register</li>
+        <li>Keep the account in test mode... for now</li>
+      </ul>
+    </li>
 
 
+    <li>
+      <span>Invite Developer</span>
+      <ul>
+        <li>
+          <span>I'll need minimal access to your Stripe account to complete setup.</span>
+
+          <ul>
+            <li><p><code>Developer</code> role should be enough, but to make sure I'm not impeded, include <code>Administrator</code> and <code>Identity View Only</code> roles.</p>
+              <div class="inlineIt">
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-imgsrc="img/add_user_show roles.png" data-target="#exampleModal">
+                  <img src="img/add_user_show roles.png" height="250px" />
+                </button>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <span>Add products</span>
+      <ul>
+        <li>From the <a href="https://dashboard.stripe.com/test/products/prod_MEc79BDcA4OsjU">Stripe.com dashboard</a> click on <a href="https://dashboard.stripe.com/test/products">[Products]</a></li>
+        <li><p>Fill in the fields shown in the image</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal"
+                  data-imgsrc="img/create_product-1.png"
+                  data-target="#exampleModal"
+          >
+            <img src="img/create_product-1.png" height="250px" />
+          </button>
+
+        </li>
+        <li><p><cite>Note the <code>Metadata</code> field under <cite>Additional Options</cite>.</dt>
+          <dd>The <code>manufacturer</code> (3M, Avery) is required for sorting the products during layout</cite></p>
+
+          See:             <button type="button" class="btn btn-primary" data-toggle="modal"
+                                   data-imgsrc="img/create_product-2.png"
+                                   data-target="#exampleModal"
+          >
+            <img src="img/create_product-2.png" height="250px" />
+          </button>
+
+        </li>
+        <li>When products are marked as "active" they automatically appear on the site</li>
+      </ul>
+    </li>
+  </ol>
+
+</div>
 
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="image"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-
-<!--  <script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
-<!--  <script src="js/plugins.js"></script>-->
-<!--  <script src="js/main.js"></script>-->
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<!--  <script>-->
-<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
-<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
-<!--  </script>-->
-<!--  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
-
+<div id="template" class="d-none">
+  ew and active products automatically appear on the sit
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 <script type="text/javascript">
   $(function () {
-    $('[data-toggle="popover"]').popover()
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var imgsrc = button.data('imgsrc') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      var modal = $(this)
+      modal.find('.modal-body .image').html('<img src="' + imgsrc +  '" alt="STUFF" />')
+      modal.find('.modal-title').text('View' + imgsrc)
+    })
+
+    // function details_in_popup(link, div_id){
+    //   $.ajax({
+    //     url: link,
+    //     success: function(response){
+    //       $('#'+div_id).html(response);
+    //     }
+    //   });
+    //   return '<div id="'+ div_id +'">Loading...</div>';
+    // }
+
+    function madrasToggle(it) {
+      return function(init, next) {
+        it.removeClass(init).addClass(next);
+        return it
+      }
+    }
+
+    function togglePop() {
+      var element = $(this);
+      element.off('hover');
+      var infoElement = (madrasToggle($('#template').clone())( "d-none", 'd-inline-block'))
+      // $.get(element.data('poload'),function(d) {
+      //   element.popover({content: d}).popover('show');
+      // });
+      //
+      var src = $(this).children("img").attr('src')
+      infoElement.append('<img src="' + src +  '" alt="STUFF" />')
+
+      return infoElement;
+
+    }
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
+
+    $('[data-toggle="popover"]').popover(
+      {
+        "html": true,
+        "content": togglePop
+      }
+    )
   })
 </script>
 
 
-
-
-  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 </body>
-
 </html>
+<!-- ######################################################################### -->
