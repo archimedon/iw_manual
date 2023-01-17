@@ -83,7 +83,12 @@
 
         <ul>
           <li><p><code>Developer</code> role should be enough, but to make sure I'm not impeded, include <code>Administrator</code> and <code>Identity View Only</code> roles.</p>
-            <div class="inlineIt"><img src="img/add_user_show roles.png" height="150px" /></div>
+            <div class="inlineIt">
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on left
+              </button>
+
+              <img src="img/add_user_show roles.png" height="150px" /></div>
           </li>
         </ul>
       </li>
@@ -128,7 +133,11 @@
 
 
 
-
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
 
 
 
