@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <title>Setup Instructions-</title>
@@ -15,19 +16,22 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/main.css">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- Leave those next 4 lines if you care about users using IE8 -->
   <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <!-- Bootstrap CSS -->
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
 
   <style type="text/css">
     .inlineIt {
@@ -41,17 +45,19 @@
       display: contents;
       overflow: auto;
     }
+    /*
+    img {
 
-    .modal-dialog {
-      max-width: 60%;
+      width:100%;
+      height:100%;
     }
-
-    #pageModal img {
+    */
+    img {
       max-width: 100%;
     }
-
   </style>
 </head>
+<!-- ######################################################################### -->
 <body>
 <div class="container">
   <h4>Final steps:</h4>
@@ -62,14 +68,14 @@
       <ul>
         <li>
           <div class="inlineIt">
-            <a class="" target="lifestylesja" href="https://lifestylesja.com/media/iw_logo_lightbg.png">
+            <a href="https://lifestylesja.com/media/iw_logo_lightbg.png">
               <img src="https://lifestylesja.com/media/iw_logo_lightbg.png" />
             </a>
           </div>
         </li>
         <li>
           <div class="inlineIt">
-            <a target="lifestylesja" href="https://lifestylesja.com/media/iw_white_bulb.png">
+            <a href="https://lifestylesja.com/media/iw_white_bulb.png">
               <img src="https://lifestylesja.com/media/iw_white_bulb.png" />
             </a>
           </div>
@@ -78,7 +84,7 @@
     </li>
 
     <li>
-      <span>Create your <a target="stripe_window" href="https://stripe.com">Stripe.com</a> account</span>
+      <span>Create your <a href="https://stripe.com">Stripe.com</a> account</span>
       <ul>
         <li>Find the [Start Now] button and follow steps to register</li>
         <li>Keep the account in test mode... for now</li>
@@ -96,7 +102,7 @@
             <li><p><code>Developer</code> role should be enough, but to make sure I'm not impeded, include <code>Administrator</code> and <code>Identity View Only</code> roles.</p>
               <div class="inlineIt">
 
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pageModal" data-imgsrc="img/add_user_show roles.png">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-imgsrc="img/add_user_show roles.png" data-target="#exampleModal">
                   <img src="img/add_user_show roles.png" height="250px" />
                 </button>
               </div>
@@ -109,27 +115,27 @@
     <li>
       <span>Add products</span>
       <ul>
-        <li>From the <a target="stripe_window" href="https://dashboard.stripe.com/test/products/prod_MEc79BDcA4OsjU">Stripe.com dashboard</a> click on <a target="stripe_window" href="https://dashboard.stripe.com/test/products">[Products]</a></li>
+        <li>From the <a href="https://dashboard.stripe.com/test/products/prod_MEc79BDcA4OsjU">Stripe.com dashboard</a> click on <a href="https://dashboard.stripe.com/test/products">[Products]</a></li>
         <li><p>Fill in the fields shown in the image</p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pageModal"
-                  data-imgsrc="img/create_product-1.png"
-          >
-            <img src="img/create_product-1.png" height="250px" />
-          </button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal"
+              data-imgsrc="img/create_product-1.png"
+              data-target="#exampleModal"
+            >
+              <img src="img/create_product-1.png" height="250px" />
+            </button>
 
         </li>
-        <li>
-          <p><cite>Note the <code>Metadata</code> field under <cite>Additional Options</cite>.
-          The <code>manufacturer</code> (3M, Avery) is required for sorting the products during layout</cite></p>
+        <li><p><cite>Note the <code>Metadata</code> field under <cite>Additional Options</cite>.</dt>
+          <dd>The <code>manufacturer</code> (3M, Avery) is required for sorting the products during layout</cite></p>
 
-          See:
-          <div>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pageModal" data-imgsrc="img/create_product-2.png"
+          See:             <button type="button" class="btn btn-primary" data-toggle="modal"
+                                   data-imgsrc="img/create_product-2.png"
+                                   data-target="#exampleModal"
           >
             <img src="img/create_product-2.png" height="250px" />
           </button>
-          </div>
+
         </li>
         <li>When products are marked as "active" they automatically appear on the site</li>
       </ul>
@@ -141,12 +147,12 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="pageModal" tabindex="-1" role="dialog" aria-labelledby="pageModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="pageModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -154,31 +160,27 @@
         <div class="image"></div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-outline-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
 
 <div id="template" class="d-none">
+  ew and active products automatically appear on the sit
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-
-<script src="js/vendor/bootstrap.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>-->
 
 <script type="text/javascript">
   $(function () {
 
-
-
-    $('#pageModal').on('show.bs.modal', function (event) {
+    $('#exampleModal').on('show.bs.modal', function (event) {
       var button = $(event.relatedTarget) // Button that triggered the modal
       var imgsrc = button.data('imgsrc') // Extract info from data-* attributes
       // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
@@ -219,10 +221,9 @@
       return infoElement;
 
     }
-
-
-
-
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
 
     $('[data-toggle="popover"]').popover(
       {
@@ -232,5 +233,8 @@
     )
   })
 </script>
+
+
 </body>
 </html>
+<!-- ######################################################################### -->
