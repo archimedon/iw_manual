@@ -53,29 +53,32 @@
   </style>
 </head>
 <body>
-  <h2>Set up Instagram:</h2>
+<main class="m-2">
+<h1 class="text-decoration-underline">Set up Instagram</h1>
 
-  <ul>
-    <li>Go here https://developers.facebook.com/apps/ & Create an App.</li>
-    <li>Find Instagram card and click on Set Up</li>
-    <li>Go to Products -> Instagram -> Basic Display -> Create App</li>
-    <li>Click on Add or Remove Instagram Testers</li>
-    <li>Scroll down and find Instagram Testers</li>
-    <li>Add your Instagram account as Tester</li>
-    <li>Now go here https://www.instagram.com/accounts/manage_access/ to Accept the invitation.</li>
-    <li>Go to Products -> Instagram -> Basic Display -> Click on Generate Token</li>
-    <li>Copy that token.</li>
+<div class="text-body">
 
-    <li><code>access_token</code> - the Instagram Long live Access (User) Token. </li>
-    <li>
-      <code>client_id</code> - the specific, shared, Instagram Application Id
-    </li>
-  </ul>
+    <ul>
+      <li>Go to <a href="https://developers.facebook.com/apps/">Facebook Developer</a> & Create an App.</li>
+      <li>Find Instagram card and click on Set Up</li>
+      <li>Go to Products -> Instagram -> Basic Display -> Create App
+        <div class="ms-2">
+          <cite class="small">Copy/record this App ID (aka <code>client_id</code>)</cite>
+        </div>
+      </li>
+      <li>Click on Add or Remove Instagram Testers</li>
+      <li>Scroll down and find Instagram Testers</li>
+      <li>Add <b>your</b> Instagram account as Tester</li>
+      <li>Now go to <a href="https://www.instagram.com/accounts/manage_access/">Instagram - Manage Access</a> to Accept the invitation.</li>
+      <li>Go to Products -> Instagram -> Basic Display -> Click on Generate Token</li>
+      <li>Copy that token (aka <code>access_token</code>).</li>
+    </ul>
+    <hr class="border border-danger w-50"/>
+    <span>
+      <cite class="smaller">from: https://nocodeapi.com/marketplace/instagram-api/</cite>
+    </span>
 
-  <span>
-    <cite class="smaller">from: https://nocodeapi.com/marketplace/instagram-api/</cite>
-  </span>
-
-
+</div>
+  </main>
 </body>
 </html>

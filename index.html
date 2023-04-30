@@ -62,13 +62,13 @@
 
 <h3>Remote services</h3>
 
-  <ul>
-    <li><b>Hosts</b>: <span class="form-label">SendGrid (Mail)</span>, <span class="form-label">Digital Ocean</span>
-    </li>
-    <li><b>Feeds</b>: <a href="#stripe_config" class="form-label">Stripe</a>, <a href="#instagram_config" class="form-label">Instagram</a>
-    </li>
+<ul>
+  <li><b>Hosts</b>: <span class="form-label">SendGrid (Mail)</span>, <span class="form-label">Digital Ocean</span>
+  </li>
+  <li><b>Feeds</b>: <a  href="stripe_setup.html" class="form-label">Stripe</a>, <a href="instagram_setup.html" class="form-label">Instagram</a>
+  </li>
+</ul>
 
-  </ul>
 <hr />
 
 
@@ -77,14 +77,12 @@
   <li>
     <dl>
       <dt>
-        <a name="stripe_config"><h3 class="d-inline">Configure Stripe</h3></a>
-         <a title="Set up stripe" href="stripe_setup.html">Set up</a>
+        <a title="Set up stripe" class="text-decoration-none" href="stripe_setup.html">
+
+          <h3 class="d-inline">Configure Stripe &#x2699;</h3>
+        </a>
+
       </dt>
-      <dd>
-        <ul>
-          <li>known: <code>STRIPE_API_ENDPOINT=https://api.stripe.com/v1</code></li>
-        </ul>
-      </dd>
 
       <dt>After the set up you will have:</dt>
       <dd>
@@ -95,6 +93,11 @@
           <li><code>Products feed (...via endpoint w/keys)</code></li>
         </ul>
       </dd>
+      <dd>
+        <ul>
+          <li>already known:<br /><code>STRIPE_API_ENDPOINT=</code>https://api.stripe.com/v1</li>
+        </ul>
+      </dd>
     </dl>
   </li>
 
@@ -102,11 +105,11 @@
     <dl>
       <dt>
 
-        <a name="instagram_config">
-          <h3 class="d-inline">Configure Instagram</h3>
+        <a class="text-decoration-none" title="Set up Instagram" href="instagram_setup.html">
+          <h3 class="d-inline">Configure Instagram &#x2699;</h3>
         </a>
 
-         <a title="Set up Instagram" href="instagram_setup.html">Set up</a></dt>
+        </dt>
       <dt>After the set up you will have:</dt>
       <dd>
         <ul>
